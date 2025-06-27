@@ -1,5 +1,5 @@
 import React from 'react'
-// import Slider from 'react-slick';
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -28,10 +28,10 @@ export default function BannerMain() {
             </div>
         </div>
 
-        {/* <Slider {...sliderSettings}>
+        <Slider {...sliderSettings}>
             <div><h3 className="text-white">Slide 1</h3></div>
             <div><h3 className="text-white">Slide 2</h3></div>
-        </Slider> */}
+        </Slider>
     </>
   )
 }
