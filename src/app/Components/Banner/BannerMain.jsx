@@ -35,7 +35,7 @@ export default function BannerMain() {
         slidesToShow: 3,
         swipeToSlide: true,
         focusOnSelect: true,
-        arrows: true,
+        arrows: false,
         centerMode: false,
         centerPadding: '0px',
     };
@@ -44,6 +44,23 @@ export default function BannerMain() {
         <>
             <style>
                 {`
+                    html,body {
+                        overflow-x: hidden;
+                    }
+                    .hero-slider-wrapper {
+                        position: relative;
+                    }
+                    .hero-slider-wrapper .thumb-slider {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        max-width: 50%;
+                    }
+
+
+
+
+
                     .hero-slider .slider-item {
                         position: relative;
                     }
@@ -70,58 +87,62 @@ export default function BannerMain() {
                     }
             `}
             </style>
-            <Slider className='hero-slider' {...mainSettings} ref={slider1}>
-                <div className='slider-item h-[964px] w-[1920px] bg-[#880808] relative overflow-hidden'>
-                    <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
-                    <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
-                    <div className='flex'>
-                        <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
-                        <div>
-                            <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+            <div className='hero-slider-wrapper'>
+                <Slider className='hero-slider' {...mainSettings} ref={slider1}>
+                    <div className='slider-item h-[964px] w-[1920px] bg-[#880808] relative overflow-hidden'>
+                        <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
+                        <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
+                        <div className='flex'>
+                            <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
+                            <div>
+                                <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+                            </div>
+                        </div>
+                        <div className='layer-img'>
+                            <img src="https://placehold.co/630x630" alt="" />
                         </div>
                     </div>
-                    <div className='layer-img'>
-                        <img src="https://placehold.co/630x630" alt="" />
-                    </div>
-                </div>
-                <div className='slider-item h-[964px] w-[1920px] bg-[#124767] relative overflow-hidden'>
-                    <div className='bg-[rgba(0,0,0,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
-                    <div className='bg-[rgba(0,0,0,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
-                    <div className='flex'>
-                        <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
-                        <div>
-                            <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+                    <div className='slider-item h-[964px] w-[1920px] bg-[#124767] relative overflow-hidden'>
+                        <div className='bg-[rgba(0,0,0,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
+                        <div className='bg-[rgba(0,0,0,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
+                        <div className='flex'>
+                            <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
+                            <div>
+                                <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+                            </div>
+                        </div>
+                        <div className='layer-img'>
+                            <img src="https://placehold.co/630x630" alt="" />
                         </div>
                     </div>
-                    <div className='layer-img'>
-                        <img src="https://placehold.co/630x630" alt="" />
-                    </div>
-                </div>
-                <div className='slider-item h-[964px] w-[1920px] bg-[#923353] relative overflow-hidden'>
-                    <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
-                    <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
-                    <div className='flex'>
-                        <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
-                        <div>
-                            <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+                    <div className='slider-item h-[964px] w-[1920px] bg-[#923353] relative overflow-hidden'>
+                        <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1079px] h-[1079px] absolute left-[-156.98px] top-[-360px] rotate-[-14.55]'></div>
+                        <div className='bg-[rgba(255,255,255,0.1)] border-0 rounded-full w-[1312.52px] h-[1282.4px] left-[1534.2px] top-[300.96px] absolute rotate-[-52]'></div>
+                        <div className='flex'>
+                            <div className='w-[211px] h-[48px] top-[51px] left-[65px] absolute text-white'>Restaurant</div>
+                            <div>
+                                <input type="search" placeholder='Search...' className='w-[821px] h-[61px] top-[50px] left-[1039px] bg-[#FFFFFF] absolute rounded-b-md'/>
+                            </div>
+                        </div>
+                        <div className='layer-img'>
+                            <img src="https://placehold.co/630x630" alt="" />
                         </div>
                     </div>
-                    <div className='layer-img'>
-                        <img src="https://placehold.co/630x630" alt="" />
-                    </div>
+                </Slider>
+                <div className='thumb-slider'>
+                    <Slider {...thumbSettings} ref={slider2}>
+                        <div className='h-[100px] px-2'>
+                            <img src="https://placehold.co/150x100" alt="Thumb 1" className="w-full h-full object-cover rounded-md" />
+                        </div>
+                        <div className='h-[100px] px-2'>
+                            <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
+                        </div>
+                        <div className='h-[100px] px-2'>
+                            <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
+                        </div>
+                    </Slider>
                 </div>
-            </Slider>
-            <Slider {...thumbSettings} ref={slider2}>
-                <div className='h-[100px] px-2'>
-                    <img src="https://placehold.co/150x100" alt="Thumb 1" className="w-full h-full object-cover rounded-md" />
-                </div>
-                <div className='h-[100px] px-2'>
-                    <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
-                </div>
-                <div className='h-[100px] px-2'>
-                    <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
-                </div>
-            </Slider>
+            </div>
         </>
     )
 }
