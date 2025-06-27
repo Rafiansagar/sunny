@@ -28,6 +28,8 @@ export default function BannerMain() {
         fade: true,
         arrows: false,
         dots: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
     };
 
     const thumbSettings = {
