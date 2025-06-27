@@ -29,7 +29,7 @@ export default function BannerMain() {
         arrows: false,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
     };
 
     const thumbSettings = {
