@@ -132,13 +132,13 @@ export default function BannerMain() {
                 <div className='thumb-slider'>
                     <Slider {...thumbSettings} ref={slider2}>
                         <div className='h-[100px] px-2'>
-                            <img src="https://placehold.co/150x100" alt="Thumb 1" className="w-full h-full object-cover rounded-md" />
+                            <img src="https://placehold.co/100x100" alt="Thumb 1" className="w-full h-full object-cover rounded-md" />
                         </div>
                         <div className='h-[100px] px-2'>
-                            <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
+                            <img src="https://placehold.co/100x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
                         </div>
                         <div className='h-[100px] px-2'>
-                            <img src="https://placehold.co/150x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
+                            <img src="https://placehold.co/100x100" alt="Thumb 2" className="w-full h-full object-cover rounded-md" />
                         </div>
                     </Slider>
                 </div>
